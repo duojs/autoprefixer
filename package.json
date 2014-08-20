@@ -1,6 +1,6 @@
 {
   "name": "duo-autoprefixer",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "autoprefixer plugin for duo",
   "repository": "shinnn/duo-autoprefixer",
   "author": {
