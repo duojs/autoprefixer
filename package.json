@@ -35,10 +35,10 @@
     "postprocess"
   ],
   "dependencies": {
-    "autoprefixer": "^2.2.0"
+    "autoprefixer-core": "^3.0.0"
   },
   "devDependencies": {
-    "duo": "^0.7.5",
+    "duo": "^0.8.1",
     "eslint": "^0.7.4",
     "jscs": "^1.5.9",
     "require-main": "^0.1.1",
