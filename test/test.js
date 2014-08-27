@@ -10,7 +10,7 @@ var test = require('tape');
 rimraf.sync(path.join(__dirname, 'tmp'));
 
 test('duo-autoprefixer', function(t) {
-  t.plan(3);
+  t.plan(4);
 
   Duo(path.join(__dirname, 'tmp', '0'))
   .use(autoprefixer())
@@ -19,12 +19,12 @@ test('duo-autoprefixer', function(t) {
     if (err) {
       t.fail(err.message);
     }
-    
+
     t.equal(
       css,
       'a {\n' +
       '  -webkit-transform: none;\n' +
-      '      -ms-transform: none;\n'+
+      '      -ms-transform: none;\n' +
       '          transform: none;\n' +
       '}\n',
       'should add vendor-prefix to CSS.'
@@ -42,7 +42,7 @@ test('duo-autoprefixer', function(t) {
     if (err) {
       t.fail(err.message);
     }
-    
+
     t.equal(
       css, 'a {\n  -moz-transform: none;\n  transform: none;\n}\n',
       'should accept options.'
@@ -50,13 +50,20 @@ test('duo-autoprefixer', function(t) {
   });
 
   Duo(path.join(__dirname, 'tmp', '2'))
+  .use(autoprefixer())
+  .entry(path.join(__dirname, 'fixture-notcss.js'))
+  .run(function(err) {
+    t.error(err, 'should not touch any files without .css extension.');
+  });
+
+  Duo(path.join(__dirname, 'tmp', '3'))
   .use(autoprefixer({
     browsers: ['ff > 2'],
     cascade: false,
     safe: true
   }))
   .entry(path.join(__dirname, 'fixture-corrupt.css'))
-  .run(function(err, css) {
-    t.assert(err, 'should  fail when the CSS is corrupt.');
+  .run(function(err) {
+    t.assert(err, 'should fail when the CSS is corrupt.');
   });
 });
