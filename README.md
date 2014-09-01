@@ -1,9 +1,5 @@
-# duo-autoprefixer 
+# duo-autoprefixer [![Build Status](https://travis-ci.org/duojs/autoprefixer.svg?branch=master)](https://travis-ci.org/duojs/autoprefixer)
 
-[![NPM version](https://badge.fury.io/js/duo-autoprefixer.svg)](https://www.npmjs.org/package/duo-autoprefixer)
-[![Build Status](https://travis-ci.org/shinnn/duo-autoprefixer.svg?branch=master)](https://travis-ci.org/shinnn/duo-autoprefixer)
-[![Dependency Status](https://david-dm.org/shinnn/duo-autoprefixer.svg)](https://david-dm.org/shinnn/duo-autoprefixer)
-[![devDependency Status](https://david-dm.org/shinnn/duo-autoprefixer/dev-status.svg)](https://david-dm.org/shinnn/duo-autoprefixer#info=devDependencies)
 
 [autoprefixer](https://github.com/ai/autoprefixer) plugin for [duo](https://www.npmjs.org/package/duo)
 
