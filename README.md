@@ -1,14 +1,11 @@
 # duo-autoprefixer [![Build Status](https://travis-ci.org/duojs/autoprefixer.svg?branch=master)](https://travis-ci.org/duojs/autoprefixer)
 
-
-[autoprefixer](https://github.com/ai/autoprefixer) plugin for [duo](https://www.npmjs.org/package/duo)
+[autoprefixer](https://github.com/postcss/autoprefixer) plugin for [duo](http://duojs.org/)
 
 ## Installation
 
-[Install with npm](https://www.npmjs.org/doc/cli/npm-install.html). (Make sure you have installed [Node][node])
-
-```
-npm install --save-dev duo-autoprefixer
+```sh
+$ npm install --save-dev duo-autoprefixer
 ```
 
 ## Usage
