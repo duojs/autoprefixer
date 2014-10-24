@@ -39,11 +39,11 @@
   },
   "devDependencies": {
     "duo": "^0.8.1",
-    "eslint": "^0.7.4",
+    "eslint": "^0.8.2",
     "jscs": "^1.5.9",
     "require-main": "^0.1.1",
     "rimraf": "^2.2.8",
-    "tap-spec": "^0.2.1",
-    "tape": "^2.14.0"
+    "tap-spec": "^1.0.1",
+    "tape": "^3.0.1"
   }
 }
