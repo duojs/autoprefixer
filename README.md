@@ -1,4 +1,4 @@
-# duo-autoprefixer [![Build Status](https://travis-ci.org/duojs/autoprefixer.svg?branch=master)](https://travis-ci.org/duojs/autoprefixer)
+# duo-autoprefixer [![Build Status](https://travis-ci.org/duojs/autoprefixer.svg?branch=master)](https://travis-ci.org/duojs/autoprefixer) [![Coverage Status](https://img.shields.io/coveralls/duojs/autoprefixer.svg)](https://coveralls.io/r/duojs/autoprefixer)
 
 [autoprefixer](https://github.com/postcss/autoprefixer) plugin for [duo](http://duojs.org/)
 
