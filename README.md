@@ -18,7 +18,7 @@ var autoprefixer = require('duo-autoprefixer');
 
 var root = __dirname;
 
-Duo(root)
+new Duo(root)
   .entry('index.css')
   .use(autoprefixer())
   .run(function(err, css) {
@@ -30,13 +30,13 @@ Duo(root)
 
 This plugin can be used on CLI.
 
-```
+```sh
 duo --use duo-autoprefixer in.css > out.css
 ```
 
 However, you don't have to do that. You can use [autoprefixer binary](https://github.com/postcss/autoprefixer#cli) directly.
 
-```
+```sh
 duo in.css | autoprefixer > out.css
 ```
 
@@ -50,18 +50,11 @@ var autoprefixer = require('duo-autoprefixer');
 
 *options*: `Object`
 
-#### options.browsers
+[All *autoprefixer-core* options](https://github.com/postcss/autoprefixer-core#usage) are available. However, there are some differences from the original:
 
-Type: `Array`
+* `from` option is by default automatically specified using [`file.path`](https://github.com/duojs/duo/blob/master/docs/api.md#duousefngen).
 
-Directly passed to [browsers](https://github.com/postcss/autoprefixer#browsers) option.
-
-#### options.cascade
-
-Type: `Boolean`
-Default: `true`
-
-Directly passed to [cascade](https://github.com/postcss/autoprefixer#visual-cascade) option.
+* `map` option is `false` by default.
 
 ## License
 
