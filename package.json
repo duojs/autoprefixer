@@ -52,6 +52,9 @@
     "tape": "^3.0.3"
   },
   "jscsConfig": {
-    "preset": "google"
+    "preset": "google",
+    "maximumLineLength": 98,
+    "requireBlocksOnNewline": true,
+    "validateLineBreaks": "LF"
   }
 }
