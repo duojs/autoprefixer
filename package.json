@@ -1,6 +1,6 @@
 {
   "name": "duo-autoprefixer",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "autoprefixer plugin for duo",
   "repository": "duojs/autoprefixer",
   "author": {
