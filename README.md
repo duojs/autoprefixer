@@ -10,7 +10,7 @@ $ npm install --save-dev duo-autoprefixer
 
 ## Usage
 
-### Node module
+### Module
 
 ```javascript
 var Duo = require('duo');
@@ -48,16 +48,19 @@ var autoprefixer = require('duo-autoprefixer');
 
 ### autoprefixer([*options*])
 
-*options*: `Object`
+*options*: `Object` (directly passed to [autoprefixer constructor](https://github.com/postcss/autoprefixer-core#usage) and [processor function](https://github.com/postcss/autoprefixer-core#css-processing))  
+Return: `Function` (duo plugin)
 
-[All *autoprefixer-core* options](https://github.com/postcss/autoprefixer-core#usage) are available. However, there are some differences from the original:
+There are some differences from the original:
 
 * `from` option is by default automatically specified using [`file.path`](https://github.com/duojs/duo/blob/master/docs/api.md#duousefngen).
 
 * `map` option is `false` by default.
 
+* Only *inline* source map is available.
+
 ## License
 
-Copyright (c) 2014 [Shinnosuke Watanabe](https://github.com/shinnn)
+Copyright (c) [Shinnosuke Watanabe](https://github.com/shinnn)
 
 Licensed under [the MIT LIcense](./LICENSE).
