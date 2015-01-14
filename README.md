@@ -1,4 +1,8 @@
-# duo-autoprefixer [![Build Status](https://travis-ci.org/duojs/autoprefixer.svg?branch=master)](https://travis-ci.org/duojs/autoprefixer) [![Coverage Status](https://img.shields.io/coveralls/duojs/autoprefixer.svg)](https://coveralls.io/r/duojs/autoprefixer)
+# duo-autoprefixer
+
+[![NPM version](https://img.shields.io/npm/v/duo-autoprefixer.svg?style=flat)](https://www.npmjs.com/package/duo-autoprefixer)
+[![Build Status](https://travis-ci.org/duojs/autoprefixer.svg?branch=master)](https://travis-ci.org/duojs/autoprefixer) [![Coverage Status](https://img.shields.io/coveralls/duojs/autoprefixer.svg?style=flat)](https://coveralls.io/r/duojs/autoprefixer)
+[![Dependency Status](https://img.shields.io/david/duojs/autoprefixer.svg?style=flat)](https://david-dm.org/duojs/autoprefixer)
 
 [autoprefixer](https://github.com/postcss/autoprefixer) plugin for [duo](http://duojs.org/)
 
